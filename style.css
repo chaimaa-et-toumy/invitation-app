@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*********Style partie post-link  ch **************/
+.post-link{
+    background-color: black;
+    height: 700px;
+    margin-top: 70px;
+
+ 
+}
+.post-link h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 29px;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+.img-svg{
+    padding: 20px;
+}
+.images{
+    width: 100%;  
+}
+.para-2 p{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 55px;
+    margin-top: 9px;
+}
+.btn-sign-exp {
+    position: relative;
+    display: flex;
+    margin-top: 4px;
+    justify-content: center;
+}
+
+
+.sign-up{
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    text-decoration: none;
+    width: 190px;
+}
+.explore{
+    text-align: center;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    width: 150px;
+    text-decoration: none;
+    background: linear-gradient(to right,#f69d3c, #A831A5);
+}
+
+
+/************* responsive partie post-link  *************/   
+@media screen and (min-width:768px){
+    .post-link{
+        height: 235px;
+        padding: 5px;
+    
+    }
+    .post-link h2{
+        text-align: left;  
+        padding: 10px; 
+        margin-left: 30px;
+        width: 650px;
+    }
+    .para-2 p{
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+    .img-svg{
+        padding: 5px;
+    }
+    .images{
+        width: 27%;
+        height: 310px;
+        position: absolute;
+        right: 65px;
+        top: 40px;    
+    }
+    .btn-sign-exp{
+       flex-direction: row;
+        justify-content: start;
+        margin-left: 50px;
+        font-size: 16px;
+    }
+   
+    .sign-up , .explore{
+        position: static;
+        padding: 10px;
+    }
+    .sign-up{
+        width: 160px;
+        
+    }
+    .explore{
+        margin-left: 1%;
+        width: 130px;
+    }
+    .sign-up a img{
+        margin-top: 18px;
+    }
+}
+
+
+
+
+
