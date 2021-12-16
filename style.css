@@ -40,6 +40,11 @@
     height: 41px;
     border-radius: 2px;
 }
+.header .nav_bar .header_button .sign_up:hover{
+    color: black;
+    background-color: white;
+    border: black 2px solid;
+}
 
 /* -------check icon humburger --------------*/
 .header label::before{
