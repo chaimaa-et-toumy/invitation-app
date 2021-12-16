@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.header ul{
+    list-style: none;
+}
+.header a{
+    text-decoration: none;
+    color:black;
+}
+.header .icon-hamburger{
+    font-size: 40px;
+}
+.header .logo h1{
+    font-size: 26px;
+}
+.header .nav_bar{
+    display: none;
+}
+.hedaer .nav_bar .header_button{
+    font-family: 'SemiBold', sans-serif;
+}
+.header .nav_bar .header_button .sign_up{
+    color: white;
+    background-color: black;
+    padding:6px;
+    width: 112px;
+    height: 41px;
+    border-radius: 2px;
+}
