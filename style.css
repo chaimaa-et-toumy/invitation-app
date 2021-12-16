@@ -176,13 +176,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/*---------- start code sabir class header and banner -----------*/
+
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
+    align-items: center;
 }
 .header ul{
     list-style: none;
+}
+.header ul li{
+    margin-top: 20px;
 }
 .header a{
     text-decoration: none;
@@ -193,9 +199,6 @@
 }
 .header .logo h1{
     font-size: 26px;
-}
-.header .nav_bar{
-    display: none;
 }
 .hedaer .nav_bar .header_button{
     font-family: 'SemiBold', sans-serif;
@@ -209,3 +212,73 @@
     border-radius: 2px;
 }
 
+/* -------check icon humburger --------------*/
+.header label::before{
+    content: '\F0c9';
+    font-family: 'FontAwesome';
+}
+header input{
+    display: none;
+}
+.header .nav_bar{
+    position: absolute;
+    top: 45px;
+    background-image: linear-gradient(to right, #FB7B30 , #A831A5);
+    width:100%;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    border-top: 2px solid black;
+    display: none;
+}
+.header .nav_bar a{
+    color: white;
+}
+.header .nav_bar a:hover{
+    border-bottom: solid white 3px;
+}
+.header input[type="checkbox"]:checked + .nav_bar{
+    display: block;
+}
+
+
+
+
+
+/* start class slide banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.banner h2,p,input,button{
+    margin-top: 10px;
+}
+.banner input{
+    border-radius: 10px;
+    padding: 10px;
+    height:56px;
+    width:346px;
+}
+.banner button{
+    background-image: linear-gradient(to right, #FB7B30 , #A831A5);
+    width: 223,57px;
+    height: 52px;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin:20px 0PX;
+}
+.banner .hero-image{
+    position: relative;
+    bottom: 10px;
+    width: 334px;
+    height: 283px;
+}
+
+/* ---------fin code sabir class header and banner-------*/
