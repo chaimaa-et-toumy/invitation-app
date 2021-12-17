@@ -246,6 +246,9 @@ form .form-item input {
     border: none;
     border-bottom: solid black 1px;
 }
+.image-left-login{
+    display: none;
+}
 /*  end */
 /* code grid images */
 .grid {
@@ -261,6 +264,45 @@ form .form-item input {
     width: 100%;
 }
 /* end code grid images */
+/*****desktop login by chaima *****/
+@media screen and (min-width:768px) {
+    .image-left-login{
+        display: block;
+    }
+    .image-left-login img{
+        width: 100%;
+    }
+    .local-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0px;
+    }
+    .form-login-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .form-item {
+        width: 50%;
+        margin: 1%;
+       
+    }
+    form .form-item input {
+        padding: 5%;
+        margin-top: 2%;
+        /* margin-top: 5%; */
+    }
+    .sign-up-desktop{
+        display: none;
+    }
+    .hr{
+        display: none;
+    }
+
+    
+    
+}
 
 
 /*start code css khalid class rewards*/
@@ -416,7 +458,7 @@ padding: 10px;
         height: 310px;
         position: absolute;
         right: 65px;
-        top: 990px;
+        top: 980px;
         
     }
     .btn-sign-exp{
