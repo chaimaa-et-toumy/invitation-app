@@ -314,7 +314,61 @@ padding: 10px;
 .title2 {
     display: none;
 }
-/*fin code css khalid class rewards*/ 
+/*fin code css khalid class rewards*/
+
+/* start code css khalid page sign_up*/
+
+.sign_up .info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+.sign_up .imag{
+    display: flex;
+    justify-content: center;
+}
+.sign_up img{
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+}
+.sign_up .info input{
+    margin-top: 6%;
+}
+
+.sign_up .input {
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+   
+     
+}
+.sign_up .buton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.sign_up button{
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right,#FB7B30,#A831A5);
+    color: white; 
+    
+    border: none;
+    border-radius: 5px;
+}
+.sign_up hr{
+    margin-top: 10px;
+   width: 400px;
+   background-color: rgb(83, 82, 82);
+}
+/* fine code css khalid page sign_up*/
 
 
 /************* responsive partie post-link  *************/
