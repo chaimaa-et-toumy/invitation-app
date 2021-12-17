@@ -5,13 +5,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* Tayeb Code */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+/* end Tayeb Code */
 /*---------- start code sabir class header and banner -----------*/
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /*Tayeb Partie */
+    width: 80%;
+    align-self: center;
 }
 .header ul{
     list-style: none;
@@ -200,6 +208,23 @@ header input{
     width: 150px;
     height: 150px;
 }
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-item {
+    width: 100%;
+}
+form .form-item input {
+    padding: 5%;
+    width: 100%;
+    border: black solid 1px;
+    margin-top: 6%;
+    /* margin-top: 5%; */
+}
 .btn {
     background: linear-gradient(to right,#f69d3c, #A831A5);
     text-decoration: none;
@@ -211,23 +236,16 @@ header input{
     width: 100%;
     display: inline-block;
     text-align: center;
+    margin: 6% 0% 6% 0%;
 }
-form {
+.line {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    margin: 2%
 }
-.form-item {
-    width: 100%;
+.line hr {
+    border: none;
+    border-bottom: solid black 1px;
 }
-form input {
-    padding: 5%;
-    width: 100%;
-    border: black solid 1px;
-}
-
 /*  end */
 
 
@@ -400,10 +418,11 @@ padding: 10px;
     .grid {
         /* testing */
         margin-top: 80px;
+        margin-bottom: 100px;
         /* end */
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(10, 70px);
+        grid-template-rows: repeat(5, 70px);
         row-gap: 10px;
         column-gap: 10px;
     }
