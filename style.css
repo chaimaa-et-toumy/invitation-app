@@ -326,7 +326,7 @@ padding: 10px;
 }   
 @media screen and (min-width:768px){
     .post-link{
-        height: 235px;
+        height: 250px;
         padding: 5px;
     
     }
@@ -348,7 +348,7 @@ padding: 10px;
         height: 310px;
         position: absolute;
         right: 65px;
-        top: 970px;
+        top: 990px;
         
     }
     .btn-sign-exp{
@@ -366,7 +366,7 @@ padding: 10px;
     }
     .explore{
         margin-left: 1%;
-        width: 12%;
+        width: 13%;
     }
     .sign-in-gougle a img{
         margin-top: 18px;
@@ -525,4 +525,97 @@ padding: 10px;
     }
     /* fin code sabir class header and banner responsive*/
 }
+/******************/
+.footer{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.explore-me{
+    display: flex;
+    flex-direction: row;
+}
+.footer .nav ul li a{
+    color: white;
+    text-decoration: none;
+    }
+
+
+.footer .nav ul li h4{
+    margin-bottom: 5px;
+}
+
+.icon-social{
+    margin-top: 20px;
+    text-align: center;
+}
+.icon-social ul{
+    float: left;
+    margin-left: 15px;
+
+}
+.icon-social li{
+ 
+        display: inline-block;
+        background-color: white;
+        margin: 5px;
+   
+}
+
+.footer .nav ul {
+    list-style: none;  
+    margin: 12px;
+    width: 100%;
+  
+       
+}
+
+
+.footer .nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: 40px;
+    
+}
+
+.para-footer{
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width:768px) {
+
+    .footer .para-1{
+        text-align: center;
+    }
+    .footer .nav{
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .explore-me{
+    
+    display: flex;
+    justify-content: space-between;
+    }
+    .icon-social ul{
+        float: none;
+        margin-left: 15px;
+    
+    }
+    .para-footer{
+        background-color: black;
+        color: grey;
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+
 
