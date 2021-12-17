@@ -6,9 +6,16 @@
     font-family: 'Poppins', sans-serif;
 }
 /* Tayeb Code */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    /* gap: 200px; */
 }
 /* end Tayeb Code */
 /*---------- start code sabir class header and banner -----------*/
@@ -17,9 +24,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*Tayeb Partie */
-    width: 80%;
-    align-self: center;
 }
 .header ul{
     list-style: none;
@@ -256,9 +260,11 @@ form .form-item input {
 }
 .grid-item {
     width: 100%;
+    height: 100%;
 }
 .grid-img {
     width: 100%;
+    height: 100%;
 }
 /* end code grid images */
 
@@ -484,7 +490,6 @@ padding: 10px;
     /* code Tayeb */
     .grid {
         /* testing */
-        margin-top: 80px;
         margin-bottom: 100px;
         /* end */
         display: grid;
