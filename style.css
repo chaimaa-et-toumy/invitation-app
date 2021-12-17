@@ -182,36 +182,52 @@ header input{
 }
 /* Tayeb CSS Mobile first*/
 /* mobile login */
+.local-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+.login-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 .form-login-icon {
     width: 150px;
     height: 150px;
 }
-.login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.line {
-    border-bottom: solid black 1px;
-}
-.btn-sign-up {
+.btn {
     background: linear-gradient(to right,#f69d3c, #A831A5);
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    padding: 10px 20% 10px 20%;
     border-radius: 5px;
-    width: 100%;
-}
-.btn-form-login input{
-    background: linear-gradient(to right,#f69d3c, #A831A5);
-    color: white;
+    padding: 15px 32px;
     border: none;
-    text-transform: uppercase;
-    padding: 10px 20% 10px 20%;
-    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-item {
     width: 100%;
 }
+form input {
+    padding: 5%;
+    width: 100%;
+    border: black solid 1px;
+}
+
 /*  end */
 
 
