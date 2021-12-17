@@ -250,6 +250,9 @@ form .form-item input {
     border: none;
     border-bottom: solid black 1px;
 }
+.image-left-login{
+    display: none;
+}
 /*  end */
 /* code grid images */
 .grid {
@@ -267,6 +270,45 @@ form .form-item input {
     height: 100%;
 }
 /* end code grid images */
+/*****desktop login by chaima *****/
+@media screen and (min-width:768px) {
+    .image-left-login{
+        display: block;
+    }
+    .image-left-login img{
+        width: 100%;
+    }
+    .local-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0px;
+    }
+    .form-login-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .form-item {
+        width: 50%;
+        margin: 1%;
+       
+    }
+    form .form-item input {
+        padding: 5%;
+        margin-top: 2%;
+        /* margin-top: 5%; */
+    }
+    .sign-up-desktop{
+        display: none;
+    }
+    .hr{
+        display: none;
+    }
+
+    
+    
+}
 
 
 /*start code css khalid class rewards*/
@@ -336,7 +378,6 @@ padding: 10px;
 /*fin code css khalid class rewards*/
 
 /* start code css khalid page sign_up*/
-
 .sign_up .info{
 
     display: flex;
@@ -349,20 +390,17 @@ padding: 10px;
     justify-content: center;
 }
 .sign_up img{
-    width: 150px;
-    height: 150px;
-    margin-top: 15px;
+    width: 100px;
+    height: 100px;
 }
 .sign_up .info input{
-    margin-top: 6%;
+    margin-top: 40px;
 }
 
 .sign_up .input {
     width: 90%;
     height: 40px;
     padding-left: 10px;
-   
-     
 }
 .sign_up .buton{
     display: flex;
@@ -378,16 +416,21 @@ padding: 10px;
     margin-bottom: 10px;
     background-image: linear-gradient(to right,#FB7B30,#A831A5);
     color: white; 
-    
     border: none;
     border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .sign_up hr{
     margin-top: 10px;
    width: 400px;
    background-color: rgb(83, 82, 82);
 }
+.form .image img{
+    display: none;
+}
 /* fine code css khalid page sign_up*/
+
 
 
 /************* responsive partie post-link  *************/
@@ -421,7 +464,7 @@ padding: 10px;
         height: 310px;
         position: absolute;
         right: 65px;
-        top: 990px;
+        top: 980px;
         
     }
     .btn-sign-exp{
@@ -596,6 +639,30 @@ padding: 10px;
         margin-left: 20px;
     }
     /* fin code sabir class header and banner responsive*/
+
+    /* start sabir code page sign_up responsive*/
+    .form{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .form .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form .image img{
+        display: block;
+        height: 400px;
+        width: 500px;
+    }
+    
+    .form .sign_up .button_login{
+        display:none;
+    }
+    .form .sign_up hr{
+        display: none;
+    }
+    /* fin sabir code page sign_up responsive*/
 }
 /******************/
 .footer{
