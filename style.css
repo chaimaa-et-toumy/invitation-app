@@ -1,3 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---------- start code sabir class header and banner -----------*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul{
+    list-style: none;
+}
+.header ul li{
+    margin-top: 20px;
+}
+.header a{
+    text-decoration: none;
+    color:black;
+}
+.header .icon-hamburger{
+    font-size: 40px;
+}
+.header .logo h1{
+    font-size: 26px;
+}
+.hedaer .nav_bar .header_button{
+    font-family: 'SemiBold', sans-serif;
+}
+.header .nav_bar .header_button .sign_up{
+    color: white;
+    background-color: black;
+    padding:6px;
+    width: 112px;
+    height: 41px;
+    border-radius: 2px;
+}
+.header .nav_bar .header_button .sign_up:hover{
+    color: black;
+    background-color: white;
+    border: black 2px solid;
+}
+
+/* -------check icon humburger --------------*/
+.header label::before{
+    content: '\F0c9';
+    font-family: 'FontAwesome';
+}
+header input{
+    display: none;
+}
+.header .nav_bar{
+    position: absolute;
+    top: 45px;
+    background-image: linear-gradient(to right, #FB7B30 , #A831A5);
+    width:100%;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    border-top: 2px solid black;
+    display: none;
+}
+.header .nav_bar a{
+    color: white;
+}
+.header .nav_bar a:hover{
+    border-bottom: solid white 3px;
+}
+.header input[type="checkbox"]:checked + .nav_bar{
+    display: block;
+}
+
+
+/* start class slide banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.banner h2,p,input,button{
+    margin-top: 10px;
+}
+.banner .button_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner input{
+    border-radius: 10px;
+    padding: 10px;
+    height:56px;
+    width:346px;
+}
+.banner button{
+    background-image: linear-gradient(to right, #FB7B30 , #A831A5);
+    width: 210px;
+    height: 52px;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin:20px 0px;
+}
+.banner .hero-image{
+    position: relative;
+    bottom: 10px;
+    width: 334px;
+    height: 283px;
+}
+
+/* -------------fin code sabir class header and banner-----------*
+
+
+
+
 /*********Style partie post-link  ch **************/
 .post-link{
     background-color: black;
@@ -28,31 +152,31 @@
     margin-top: 9px;
 }
 .btn-sign-exp {
-    position: relative;
+ 
     display: flex;
-    margin-top: 4px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: space-around;
 }
 
 
-.sign-up{
+.sign-in-gougle{
     background-color: white;
     text-align: center;
     color: black;
     padding: 15px;
     border-radius: 5px;
-    position: absolute;
+    width: 70%;
     text-decoration: none;
-    width: 190px;
+ 
 }
 .explore{
     text-align: center;
     color: white;
     padding: 12px;
     border-radius: 5px;
-    position: absolute;
-    top: 70px;
-    width: 150px;
+    width: 50%;
     text-decoration: none;
     background: linear-gradient(to right,#f69d3c, #A831A5);
 }
@@ -90,6 +214,75 @@
 }
 /*  end */
 
+
+
+/*start code css khalid class rewards*/
+
+
+.rewards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.rewards .article{
+text-align: center;
+padding: 10px;
+}
+.rewards .img1 img ,.img2 img{
+    width: 100%;
+}
+.rewards .title1 {
+    display: flex;
+}
+
+.rewards .title1 h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.rewards .article .section-article{
+    margin-top: 20px;
+    
+}
+.rewards .article .section-article span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;  
+}
+.section-rewards .article .section-article p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;   
+}
+.rewards .article .section-article .para{
+    margin-bottom: 40px;
+}
+.rewards .article .section-article p a{
+    color: #000;
+}
+
+.rewards .article button{
+    width: 160px;
+    height: 40px;
+    background-image: linear-gradient(to right,#FB7B30,#A831A5);
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: white;
+  
+}
+
+.title2 {
+    display: none;
+}
+/*fin code css khalid class rewards*/ 
+
+
 /************* responsive partie post-link  *************/   
 @media screen and (min-width:768px){
     .post-link{
@@ -115,7 +308,8 @@
         height: 310px;
         position: absolute;
         right: 65px;
-        top: 40px;    
+        top: 600px;
+        
     }
     .btn-sign-exp{
        flex-direction: row;
@@ -124,24 +318,67 @@
         font-size: 16px;
     }
    
-    .sign-up , .explore{
-        position: static;
-        padding: 10px;
+    .sign-in-gougle, .explore{
+         padding: 10px; 
     }
-    .sign-up{
-        width: 160px;
-        
+    .sign-in-gougle{
+        width: 18%;
     }
     .explore{
         margin-left: 1%;
-        width: 130px;
+        width: 12%;
     }
-    .sign-up a img{
+    .sign-in-gougle a img{
         margin-top: 18px;
     }
 
+
+
+
+/*start code css khalid class rewards media query*/
+
+
+    .title1 {
+        display: none;
+    }
+    .title2 {
+        display: block;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+   
+    }
+    .rewards{
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .rewards .title1 h1{
+        
+        position: absolute;
+        left: 590px;
+        bottom: 590px;
+    }
+    .rewards .article{
+        width: 100%;
+        padding-left:  50px;
+        padding-right:  50px;
+        text-align: start;
+    }
+    .rewards .img1 ,.img2 {  
+        width: 70%;
+    }
+    .rewards .article .button{  
+        display: flex;
+        justify-content: center;
+        margin-top:40px ;
+       
+    }
+   /*fin code css khalid class rewards media query*/
     /* code Tayeb */
     .grid {
+        /* testing */
+        margin-top: 80px;
+        /* end */
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(10, 70px);
@@ -196,121 +433,55 @@
         grid-row: 3/6;
     }
     /* end code Tayeb */
+
+    /* start code sabir class header and banner responsive*/
+    .header{
+        gap: 50px;
+    }
+    .header label{
+        display: none;
+    }
+    .header .nav_bar{
+        border: solid black 2px;
+        display: flex;
+        justify-content: space-between;
+        position: static;
+        background-image:none;
+        border: none;
+    }
+    .header .nav_bar ul{
+        display: flex;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .header .nav_bar a{
+        color: black;
+    }
+    .header .nav_bar a:hover{
+        border-bottom: black 2px solid;
+    }
+    .banner{
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        height: 250px;
+    }
+    .banner .button_banner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .banner .hero-image{
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+    .banner .button_banner input,button{
+        margin: 0px 20px;
+    }
+    .banner h2,p,input,button{
+        margin-left: 20px;
+    }
+    /* fin code sabir class header and banner responsive*/
 }
 
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/*---------- start code sabir class header and banner -----------*/
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header ul{
-    list-style: none;
-}
-.header ul li{
-    margin-top: 20px;
-}
-.header a{
-    text-decoration: none;
-    color:black;
-}
-.header .icon-hamburger{
-    font-size: 40px;
-}
-.header .logo h1{
-    font-size: 26px;
-}
-.hedaer .nav_bar .header_button{
-    font-family: 'SemiBold', sans-serif;
-}
-.header .nav_bar .header_button .sign_up{
-    color: white;
-    background-color: black;
-    padding:6px;
-    width: 112px;
-    height: 41px;
-    border-radius: 2px;
-}
-
-/* -------check icon humburger --------------*/
-.header label::before{
-    content: '\F0c9';
-    font-family: 'FontAwesome';
-}
-header input{
-    display: none;
-}
-.header .nav_bar{
-    position: absolute;
-    top: 45px;
-    background-image: linear-gradient(to right, #FB7B30 , #A831A5);
-    width:100%;
-    text-align: center;
-    height: 100%;
-    z-index: 1;
-    border-top: 2px solid black;
-    display: none;
-}
-.header .nav_bar a{
-    color: white;
-}
-.header .nav_bar a:hover{
-    border-bottom: solid white 3px;
-}
-.header input[type="checkbox"]:checked + .nav_bar{
-    display: block;
-}
-
-
-
-
-
-/* start class slide banner */
-.banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    background-color: black;
-    text-align: center;
-}
-.banner h2,p,input,button{
-    margin-top: 10px;
-}
-.banner input{
-    border-radius: 10px;
-    padding: 10px;
-    height:56px;
-    width:346px;
-}
-.banner button{
-    background-image: linear-gradient(to right, #FB7B30 , #A831A5);
-    width: 223,57px;
-    height: 52px;
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    margin:20px 0PX;
-}
-.banner .hero-image{
-    position: relative;
-    bottom: 10px;
-    width: 334px;
-    height: 283px;
-}
-
-/* ---------fin code sabir class header and banner-------*/
