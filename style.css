@@ -299,7 +299,13 @@ padding: 10px;
 /*fin code css khalid class rewards*/ 
 
 
-/************* responsive partie post-link  *************/   
+/************* responsive partie post-link  *************/
+@media screen and (min-width:605px) {
+   .images{
+       width: 60%;
+   }
+   
+}   
 @media screen and (min-width:768px){
     .post-link{
         height: 235px;
@@ -324,7 +330,7 @@ padding: 10px;
         height: 310px;
         position: absolute;
         right: 65px;
-        top: 600px;
+        top: 970px;
         
     }
     .btn-sign-exp{
