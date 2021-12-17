@@ -247,7 +247,20 @@ form .form-item input {
     border-bottom: solid black 1px;
 }
 /*  end */
-
+/* code grid images */
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item {
+    width: 100%;
+}
+.grid-img {
+    width: 100%;
+}
+/* end code grid images */
 
 
 /*start code css khalid class rewards*/
