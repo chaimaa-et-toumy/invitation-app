@@ -140,11 +140,11 @@ header input{
         }
         .partners .partner{
             display: flex;
+            justify-content: space-between;
         }
         .partners .partner img{
-            padding: 20px;
-            width:300px;
             width: 200px;
+            height: 60px;
             animation: glisse 10s infinite;
         }
         @keyframes glisse{
@@ -303,6 +303,7 @@ form .form-item input {
 /* end code grid images */
 /*****desktop login by chaima *****/
 @media screen and (min-width:768px) {
+
     .image-left-login{
         display: block;
     }
@@ -661,6 +662,28 @@ padding: 10px;
     .banner h2, .banner p,input,button{
         margin-left: 20px;
     }
+
+
+
+    /* start code class partners sabir*/
+.partners{
+    margin-top: 60px;
+    margin-left:0px;
+    transform: none;
+    overflow:none;
+    width: 100%;
+}
+.partners .partner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.partners .partner img{
+    width: 160px;
+    height: 50px;
+    animation:none;
+}
     /* fin code sabir class header and banner responsive*/
 
     /* start sabir code page sign_up responsive*/
