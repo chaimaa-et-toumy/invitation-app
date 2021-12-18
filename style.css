@@ -351,7 +351,7 @@ form .form-item input {
 text-align: center;
 padding: 10px;
 }
-.rewards  img , img{
+.rewards .img1 img ,.img2 img{
     width: 100%;
 }
 .rewards .title1 {
