@@ -214,6 +214,7 @@ header input{
     margin: 10px 0;
 }
 
+
 .explore{
     text-align: center;
     color: white;
@@ -707,8 +708,13 @@ padding: 10px;
     text-decoration: none;
 }
 
-.footer .nav ul li h4{
+.footer .nav ul li span{
     margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer .nav ul li h2{
+    font-size: 16px;
 }
 
 .icon-social{
