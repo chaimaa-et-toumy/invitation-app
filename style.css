@@ -375,6 +375,10 @@ padding: 10px;
 .title2 {
     display: none;
 }
+.rewards .article button a{
+    color: white;
+    text-decoration: none;
+}
 /*fin code css khalid class rewards*/
 
 /* start code css khalid page sign_up*/
@@ -492,7 +496,7 @@ padding: 10px;
 
 
 /*start code css khalid class rewards media query*/
-
+@media screen  and (min-width:768px){
 
     .title1 {
         display: none;
@@ -501,11 +505,12 @@ padding: 10px;
         display: block;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 30px;
    
     }
     .rewards{
         flex-direction: row;
-        padding: 30px;
+        margin-top: 40px;
     }
 
     .rewards .title1 h1{
@@ -529,6 +534,11 @@ padding: 10px;
         margin-top:40px ;
        
     }
+    .rewards .article .section-article span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;  
+        margin-left: 20px;
+}
    /*fin code css khalid class rewards media query*/
     /* code Tayeb */
     .grid {
