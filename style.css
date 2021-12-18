@@ -18,7 +18,7 @@ body {
     /* gap: 200px; */
 }
 /* end Tayeb Code */
-/*---------- start code sabir class header and banner -----------*/
+/*---------- start code sabir class header and banner and partners-----------*/
 
 .header{
     display: flex;
@@ -70,7 +70,7 @@ header input{
     position: absolute;
     top: 45px;
     background-image: linear-gradient(to right, #FB7B30 , #A831A5);
-    width:100%;
+    width:90%;
     text-align: center;
     height: 100%;
     z-index: 1;
@@ -97,7 +97,7 @@ header input{
     background-color: black;
     text-align: center;
 }
-.banner h2,p,input,button{
+.banner h2,.banner p,input,button{
     margin-top: 10px;
 }
 .banner .button_banner{
@@ -124,12 +124,51 @@ header input{
 }
 .banner .hero-image{
     position: relative;
+    margin-right: 5%;
     bottom: 10px;
     width: 334px;
     height: 283px;
 }
 
-/* -------------fin code sabir class header and banner-----------*
+/* start code class partners sabir*/
+.partners{
+            margin-top: 20px;
+            margin-left: 50%;
+            transform: translateX(-100px);
+            overflow: hidden;
+            width: 200px;
+        }
+        .partners .partner{
+            display: flex;
+        }
+        .partners .partner img{
+            padding: 20px;
+            width:300px;
+            width: 200px;
+            animation: glisse 10s infinite;
+        }
+        @keyframes glisse{
+            0%{
+                transform: translateX(0px);
+            }
+            20%{
+                transform: translateX(-200px);
+            }
+            40%{
+                transform: translateX(-400px);
+            }
+            60%{
+                transform: translateX(-600px);
+            }
+            80%{
+                transform: translateX(-800px);
+            }
+            100%{
+                transform: translateX(-1000px);
+            }
+        }
+
+/* -------------fin code sabir class header and banner an partners-----------*
 
 
 
@@ -137,39 +176,31 @@ header input{
 /*********Style partie post-link  ch **************/
 .post-link{
     background-color: black;
-    height: 700px;
-    margin-top: 70px;
-
- 
+    margin: 35px 0px;
+    padding: 15px 20px 15px 20px;
+    position: relative;
 }
 .post-link h2{
     color: white;
     text-align: center;
     font-size: 40px;
-    padding: 29px;
+    padding: 29px 0px;
     font-weight: normal;
     font-family: sans-serif;
 }
 
-.img-svg{
-    padding: 20px;
-}
-.images{
-    width: 100%;  
-}
 .para-2 p{
     color: whitesmoke;
     font-size: 20px;
-    margin-left: 55px;
     margin-top: 9px;
 }
 .btn-sign-exp {
- 
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 20%;
     justify-content: space-around;
+    margin: 10px 0px;
 }
 
 
@@ -179,16 +210,16 @@ header input{
     color: black;
     padding: 15px;
     border-radius: 5px;
-    width: 70%;
     text-decoration: none;
- 
+    margin: 10px 0;
 }
+
 .explore{
     text-align: center;
     color: white;
     padding: 12px;
     border-radius: 5px;
-    width: 50%;
+    margin: 10px 0;
     text-decoration: none;
     background: linear-gradient(to right,#f69d3c, #A831A5);
 }
@@ -227,7 +258,6 @@ form .form-item input {
     width: 100%;
     border: black solid 1px;
     margin-top: 6%;
-    /* margin-top: 5%; */
 }
 .btn {
     background: linear-gradient(to right,#f69d3c, #A831A5);
@@ -292,7 +322,6 @@ form .form-item input {
     .form-item {
         width: 50%;
         margin: 1%;
-       
     }
     form .form-item input {
         padding: 5%;
@@ -306,8 +335,6 @@ form .form-item input {
         display: none;
     }
 
-    
-    
 }
 
 
@@ -375,6 +402,10 @@ padding: 10px;
 .title2 {
     display: none;
 }
+.rewards .article button a{
+    color: white;
+    text-decoration: none;
+}
 /*fin code css khalid class rewards*/
 
 /* start code css khalid page sign_up*/
@@ -434,65 +465,49 @@ padding: 10px;
 
 
 /************* responsive partie post-link  *************/
-@media screen and (min-width:605px) {
-   .images{
-       width: 60%;
-   }
-   
-}   
+
 @media screen and (min-width:768px){
-    .post-link{
-        height: 250px;
-        padding: 5px;
-    
+    .para-button{
+        display: inline-block;
+        width: 63%;
     }
     .post-link h2{
         text-align: left;  
-        padding: 10px; 
-        margin-left: 30px;
-        width: 650px;
+        padding: 10px 81px 10px 0; 
     }
     .para-2 p{
-        margin-left: 50px;
         margin-top: 0px;
     }
-    .img-svg{
-        padding: 5px;
-    }
     .images{
-        width: 27%;
-        height: 310px;
+        max-width: 40%;
+        height: 112%;
         position: absolute;
-        right: 65px;
-        top: 980px;
-        
+        right: 10px;
+        top: -18px;
     }
     .btn-sign-exp{
        flex-direction: row;
         justify-content: start;
-        margin-left: 50px;
         font-size: 16px;
+        margin: 0;
     }
    
     .sign-in-gougle, .explore{
-         padding: 10px; 
-    }
-    .sign-in-gougle{
-        width: 18%;
+         padding: 10px;
     }
     .explore{
         margin-left: 1%;
-        width: 13%;
     }
     .sign-in-gougle a img{
         margin-top: 18px;
     }
 
 
+}
 
 
 /*start code css khalid class rewards media query*/
-
+@media screen  and (min-width:768px){
 
     .title1 {
         display: none;
@@ -501,11 +516,12 @@ padding: 10px;
         display: block;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 30px;
    
     }
     .rewards{
         flex-direction: row;
-        padding: 30px;
+        margin-top: 40px;
     }
 
     .rewards .title1 h1{
@@ -529,6 +545,12 @@ padding: 10px;
         margin-top:40px ;
        
     }
+    .rewards .article .section-article span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;  
+        /* margin-left: 20px; */
+    }
+
    /*fin code css khalid class rewards media query*/
     /* code Tayeb */
     .grid {
@@ -636,7 +658,7 @@ padding: 10px;
     .banner .button_banner input,button{
         margin: 0px 20px;
     }
-    .banner h2,p,input,button{
+    .banner h2, .banner p,input,button{
         margin-left: 20px;
     }
     /* fin code sabir class header and banner responsive*/
@@ -665,7 +687,8 @@ padding: 10px;
     }
     /* fin sabir code page sign_up responsive*/
 }
-/******************/
+
+/******** partie footer chaimaa **********/
 .footer{
     color: white;
     background-color: rgb(0, 0, 0);
@@ -679,11 +702,11 @@ padding: 10px;
     display: flex;
     flex-direction: row;
 }
+
 .footer .nav ul li a{
     color: white;
     text-decoration: none;
-    }
-
+}
 
 .footer .nav ul li h4{
     margin-bottom: 5px;
@@ -698,37 +721,46 @@ padding: 10px;
     margin-left: 15px;
 
 }
-.icon-social li{
- 
-        display: inline-block;
-        background-color: white;
-        margin: 5px;
-   
+.icon-social ul li{
+    display: inline-block;
+    background-color: white;
+    margin: 5px;
+}
+.icon-social ul li a{
+    display: flex;
+    padding: 2px;
 }
 
 .footer .nav ul {
     list-style: none;  
     margin: 12px;
     width: 100%;
-  
-       
 }
-
 
 .footer .nav{
     display: flex;
-    justify-content: space-between;
-    width: 40%;
-    margin-right: 40px;
-    
+    justify-content: space-evenly;
+    width: 45%;
 }
 
 .para-footer{
     text-align: center;
     width: 100%;
 }
-@media screen and (max-width:768px) {
 
+
+@media screen and (max-width:1024px) {
+
+    .images{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:914px) {
+
+    .footer {
+        justify-content: center;
+    }
     .footer .para-1{
         text-align: center;
     }
@@ -739,9 +771,8 @@ padding: 10px;
         flex-direction: column;
     }
     .explore-me{
-    
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-evenly;
     }
     .icon-social ul{
         float: none;
@@ -754,8 +785,10 @@ padding: 10px;
         margin: 0px;
         padding-bottom: 10px;
     }
-    
 }
 
-
-
+@media screen and (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+}
