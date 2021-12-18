@@ -533,13 +533,14 @@ padding: 10px;
     /* code Tayeb */
     .grid {
         /* testing */
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
         /* end */
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(5, 70px);
         row-gap: 10px;
         column-gap: 10px;
+        margin: 50px 0px 50px 0px;
     }
     .grid-item {
         display: flex;
