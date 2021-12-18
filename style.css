@@ -70,7 +70,7 @@ header input{
     position: absolute;
     top: 45px;
     background-image: linear-gradient(to right, #FB7B30 , #A831A5);
-    width:100%;
+    width:90%;
     text-align: center;
     height: 100%;
     z-index: 1;
@@ -124,6 +124,7 @@ header input{
 }
 .banner .hero-image{
     position: relative;
+    margin-right: 5%;
     bottom: 10px;
     width: 334px;
     height: 283px;
