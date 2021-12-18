@@ -18,7 +18,7 @@ body {
     /* gap: 200px; */
 }
 /* end Tayeb Code */
-/*---------- start code sabir class header and banner -----------*/
+/*---------- start code sabir class header and banner and partners-----------*/
 
 .header{
     display: flex;
@@ -130,7 +130,45 @@ header input{
     height: 283px;
 }
 
-/* -------------fin code sabir class header and banner-----------*
+/* start code class partners sabir*/
+.partners{
+            margin-top: 20px;
+            margin-left: 50%;
+            transform: translateX(-100px);
+            overflow: hidden;
+            width: 200px;
+        }
+        .partners .partner{
+            display: flex;
+        }
+        .partners .partner img{
+            padding: 20px;
+            width:300px;
+            width: 200px;
+            animation: glisse 10s infinite;
+        }
+        @keyframes glisse{
+            0%{
+                transform: translateX(0px);
+            }
+            20%{
+                transform: translateX(-200px);
+            }
+            40%{
+                transform: translateX(-400px);
+            }
+            60%{
+                transform: translateX(-600px);
+            }
+            80%{
+                transform: translateX(-800px);
+            }
+            100%{
+                transform: translateX(-1000px);
+            }
+        }
+
+/* -------------fin code sabir class header and banner an partners-----------*
 
 
 
