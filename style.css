@@ -70,7 +70,7 @@ header input{
     position: absolute;
     top: 45px;
     background-image: linear-gradient(to right, #FB7B30 , #A831A5);
-    width:90%;
+    width:100%;
     text-align: center;
     height: 100%;
     z-index: 1;
