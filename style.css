@@ -286,6 +286,9 @@ form .form-item input {
 }
 /*  end */
 /* code grid images */
+.just-for-seo {
+    display: none;
+}
 .grid {
     display: flex;
     flex-direction: column;
