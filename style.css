@@ -165,6 +165,9 @@ header input{
     color: white;
     background: linear-gradient(to right,#f69d3c, #A831A5);
 }
+.post-link .images{
+    width: 100%;
+}
 .local-container {
     display: flex;
     flex-direction: column;
@@ -177,6 +180,7 @@ header input{
     flex-direction: column;
     align-items: center;
 }
+
 .form-login-icon {
     width: 130px;
 }
@@ -604,7 +608,7 @@ form .form-item input {
         padding-bottom: 10px;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:601px) {
     .container {
         width: 100%;
     }
