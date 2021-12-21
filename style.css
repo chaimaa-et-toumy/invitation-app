@@ -578,11 +578,6 @@ form .form-item input {
     text-align: center;
     width: 100%;
 }
-@media screen and (max-width:1024px) {
-    .images{
-        width: 100%;
-    }
-}
 @media screen and (max-width:914px) {
     .footer {
         justify-content: center;
