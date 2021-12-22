@@ -163,6 +163,9 @@ header input{
     color: white;
     background: linear-gradient(to right,#f69d3c, #A831A5);
 }
+.post-link .images{
+    width: 100%;
+}
 .local-container {
     display: flex;
     flex-direction: column;
@@ -175,6 +178,7 @@ header input{
     flex-direction: column;
     align-items: center;
 }
+
 .form-login-icon {
     width: 130px;
 }
@@ -247,10 +251,10 @@ form .form-item input {
 }
 .rewards .title1 {
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .rewards .title1 h1{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;  
     justify-content: center;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -258,18 +262,16 @@ form .form-item input {
 .rewards .article .section-article{
     margin-top: 20px;
 }
-.rewards .article .section-article span{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-.section-rewards .article .section-article p{
+.rewards .article .section-article h3{  
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+.rewards .article .section-article p{
+    font-size: 18px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 .rewards .article .section-article .para{
-    margin-bottom: 40px;
+    margin-bottom: 40px;   
 }
 .rewards .article .section-article p a{
     color: #000;
@@ -486,7 +488,7 @@ form .form-item input {
     height: 100px;
 }
 .sign_up .info input{
-    margin-top: 30px;
+    margin-top: 6%;
 }
 .sign_up .input {
     width: 90%;
