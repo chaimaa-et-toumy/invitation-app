@@ -245,17 +245,13 @@ form .form-item input {
 .rewards .article{
     text-align: center;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .rewards .img1 img ,.img2 img{
     width: 100%;
 }
-.rewards .title1 {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .rewards .title1 h1{
     font-size: 20px;  
-    justify-content: center;
     margin-bottom: 40px;
     margin-top: 20px;
 }
@@ -286,13 +282,10 @@ form .form-item input {
     margin-top: 30px;
     color: white;
 }
-.title2 {
+.rewards .title2 {
     display: none;
 }
-.rewards .article button a{
-    color: white;
-    text-decoration: none;
-}
+
 @media (min-width:601px) {
     .image-left-login{
         display: block;
@@ -331,10 +324,10 @@ form .form-item input {
     .rewards{
         flex-direction: row;
     }
-    .title1 h1 {
+    .rewards .title1 h1 {
         display: none;
     }
-    .title2 {
+    .rewards .title2 {
         display: block;
         text-align: center;
         margin-bottom: 30px;
