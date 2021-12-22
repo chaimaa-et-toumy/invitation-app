@@ -109,13 +109,11 @@ header input{
     overflow: hidden;
     width: 100%;
 }
-.part {
-    margin: 0 20px;
-}
-.partners .partner{
+.partners{
     display: flex;
 }
-.partners .partner img{
+.partners img{
+    padding: 2px 10px;
     width: 200px;
     height: 60px;
     animation: glisse 10s infinite; 
@@ -447,10 +445,10 @@ form .form-item input {
     .partners{
         margin-top: 60px;
     }
-    .partners .partner{
+    .partners{
         justify-content: space-between;
     }
-    .partners .partner img{
+    .partners img{
         width: 160px;
         height: 50px;
         animation:none;
